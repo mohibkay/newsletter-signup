@@ -11,8 +11,9 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
@@ -30,27 +31,40 @@
   </head>
   <body>
     <!-- Sign-up form start -->
+    <main>
+      <div class="hero"></div>
 
-    <h1>Stay updated!</h1>
+      <section>
+        <header>
+          <h1 class="heading">Stay updated!</h1>
 
-    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <p class="subheading">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
 
-    <ul>
-      <li>Product discovery and building what matters</li>
-      <li>Measuring to ensure updates are a success</li>
-      <li>And much more!</li>
-    </ul>
+          <ul role="list" class="features">
+            <li class="features__item">
+              Product discovery and building what matters
+            </li>
+            <li class="features__item">
+              Measuring to ensure updates are a success
+            </li>
+            <li class="features__item">And much more!</li>
+          </ul>
+        </header>
 
-    <form>
-      <label for="email"> Email address </label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="email@company.com"
-      />
-      <button type="submit">Subscribe to monthly newsletter</button>
-    </form>
+        <form>
+          <label for="email"> Email address </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@company.com"
+          />
+          <button type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </section>
+    </main>
 
     <!-- Sign-up form end -->
 
