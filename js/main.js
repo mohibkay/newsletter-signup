@@ -2,6 +2,7 @@ const form = document.getElementById('form');
 const formContainer = document.querySelector('main');
 const successMessage = document.querySelector('.success');
 const emailId = document.querySelector('.email__id');
+const dismissBtn = document.querySelector('.dismiss__btn');
 
 function validateForm(event) {
   event.preventDefault();
@@ -39,3 +40,4 @@ function isEmailValid(email) {
 }
 
 form.addEventListener('submit', validateForm);
+dismissBtn.addEventListener('click', () => window.location.reload());
