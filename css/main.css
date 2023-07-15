@@ -152,9 +152,6 @@ button {
   text-align: center;
   margin-top: 0rem;
 }
-.attribution a {
-  color: var(--tomato);
-}
 
 @media (min-width: 768px) {
   body {
@@ -209,9 +206,5 @@ button {
   }
   .dismiss__btn {
     margin-top: 2rem;
-  }
-  .attribution {
-    color: var(--white);
-    margin-top: 1rem;
   }
 }
