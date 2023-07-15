@@ -53,8 +53,11 @@
           </ul>
         </header>
 
-        <form>
-          <label for="email"> Email address </label>
+        <form id="form" novalidate>
+          <div class="label__error">
+            <label for="email"> Email address </label>
+            <p class="error-message"></p>
+          </div>
           <input
             type="email"
             name="email"
@@ -90,5 +93,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/mohibkay">mohibkay</a>.
     </div> -->
+
+    <script src="js/main.js"></script>
   </body>
 </html>
