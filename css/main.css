@@ -22,6 +22,13 @@
 
 body {
   font-family: Roboto Regular;
+  display: grid;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+main {
+  display: none;
 }
 
 .hero {
@@ -84,12 +91,38 @@ input {
 
 button {
   width: 100%;
-  padding: 1rem;
+  padding: 1.25rem 1rem;
   border-radius: 8px;
   background-color: var(--dark-slate-grey);
   color: var(--white);
   font-weight: 700;
   border: none;
+}
+
+.success {
+  background-color: var(--white);
+  border-radius: 28px;
+  max-width: 400px;
+  padding: 2rem;
+  place-self: center;
+}
+
+.success__heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.success__heading::before {
+  content: url(../assets/images/icon-success.svg);
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.success__message {
+}
+.dismiss__btn {
+  margin-top: 50%;
 }
 
 @media (min-width: 768px) {
@@ -116,7 +149,8 @@ button {
   }
   main {
     background-color: var(--white);
-    display: flex;
+    /* display: flex;  */
+    display: none;
     align-items: center;
     padding: 1.5rem;
     border-radius: 28px;
