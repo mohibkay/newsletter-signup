@@ -13,6 +13,8 @@
 }
 
 :root {
+  --primary: hsl(4, 100%, 67%);
+  --tomato: #ff5378;
   --dark-slate-grey: hsl(234, 29%, 20%);
   --charcoal-grey: hsl(235, 18%, 26%);
   --grey: hsl(231, 7%, 60%);
@@ -108,21 +110,27 @@ button {
 }
 
 .success__heading {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .success__heading::before {
   content: url(../assets/images/icon-success.svg);
   display: block;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .success__message {
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+strong {
+  font-weight: 700;
 }
 .dismiss__btn {
-  margin-top: 50%;
+  margin-top: 80%;
 }
 
 @media (min-width: 768px) {
@@ -155,7 +163,20 @@ button {
     padding: 1.5rem;
     border-radius: 28px;
   }
+  button:hover {
+    background: linear-gradient(to right, var(--tomato), var(--primary));
+    cursor: pointer;
+  }
   form {
     padding-right: 3rem;
+  }
+  .success {
+    padding: 2.75rem;
+  }
+  .success__heading {
+    font-size: 3rem;
+  }
+  .dismiss__btn {
+    margin-top: 2rem;
   }
 }
