@@ -1,6 +1,7 @@
 const form = document.getElementById('form');
 const formContainer = document.querySelector('main');
 const successMessage = document.querySelector('.success');
+const emailId = document.querySelector('.email__id');
 
 function validateForm(event) {
   event.preventDefault();
@@ -12,6 +13,7 @@ function validateForm(event) {
   } else if (!isEmailValid(emailValue)) {
     setErrorFor(emailInput, 'Valid email required');
   } else {
+    emailId.innerText = emailValue;
     setSuccessFor(emailInput);
     formContainer.style.display = 'none';
     successMessage.style.display = 'block';

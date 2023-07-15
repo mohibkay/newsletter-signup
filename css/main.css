@@ -25,7 +25,7 @@
 body {
   font-family: Roboto Regular;
   display: grid;
-  min-height: 100vh;
+  height: 100vh;
   overflow: auto;
 }
 
@@ -85,7 +85,7 @@ label {
 }
 
 .error-message {
-  color: red;
+  color: var(--tomato);
 }
 
 input {
@@ -114,13 +114,15 @@ button {
   border-radius: 28px;
   max-width: 400px;
   padding: 2rem;
-  place-self: center;
+  place-self: end center;
+  margin-top: 15%;
 }
 
 .success__heading {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+  color: var(--charcoal-grey);
 }
 
 .success__heading::before {
@@ -130,21 +132,31 @@ button {
 }
 
 .success__message {
-  font-size: 0.9rem;
-  line-height: 1.25rem;
-  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--charcoal-grey);
 }
-strong {
-  font-weight: 700;
+.email__id {
+  font-weight: bold;
+  color: var(--dark-slate-grey);
 }
 .dismiss__btn {
-  margin-top: 80%;
+  margin-top: 90%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 0rem;
+}
+.attribution a {
+  color: var(--tomato);
 }
 
 @media (min-width: 768px) {
   body {
     background-color: #35384d;
-    padding: 20vh 19vw;
+    padding: 10vh 19vw;
   }
   section {
     padding: 1.5rem;
@@ -179,11 +191,23 @@ strong {
   }
   .success {
     padding: 2.75rem;
+    margin-top: 0;
   }
   .success__heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: var(--dark-slate-grey);
+  }
+  .success__message {
+    line-height: 1.25rem;
+    color: var(--charcoal-grey);
   }
   .dismiss__btn {
     margin-top: 2rem;
+  }
+  .attribution {
+    color: var(--white);
+    margin-top: 1rem;
   }
 }
